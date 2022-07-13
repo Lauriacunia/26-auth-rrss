@@ -10,5 +10,8 @@ const usuariosSchema = new mongoose.Schema({
 usuariosSchema.methods.encriptarContrasenia = async (contrasenia) => {
     return bcrypt.hashSync(contrasenia,bcrypt.genSaltSync(8));
 }
+usuariosSchema.methods.compararContrasenia = async (contrasenia) => {
+    return bcrypt.compareSync(contrasenia,this.contrasenia);
+}
 
 export default mongoose.model("usuarios", usuariosSchema);
