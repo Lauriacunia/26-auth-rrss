@@ -16,4 +16,10 @@ npm i dotenv
 npm i mongoose
 npm i connect-mongo
 npm i passport passport-local
+npm i jsonwebtoken
+npm i bcrypt
 ```
+
+[Passport docs]["https://www.passportjs.org/"]
+[Facebook api]["https://developers.facebook.com/docs/facebook-login/?locale=es_la"]
+[JWT.io]["https://jwt.io/"]
